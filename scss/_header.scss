@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  background: $VeryPaleCyan;
+  padding: 3rem 0;
+  margin-bottom: 5rem;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      width: 12rem;
+      cursor: pointer;
+      .logo {
+        width: 100%;
+      }
+    }
+  }
+
+  &__hero {
+    margin-top: 7rem;
+    &__body {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    &__title {
+      font-size: 2.75rem;
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      margin-bottom: 3rem;
+    }
+    &__link {
+      width: 75%;
+    }
+
+    &__illustration {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

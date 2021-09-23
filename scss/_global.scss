@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $VeryDarkCyan;
+}
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+// buttons
+.btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5rem;
+  display: inline-block;
+  transition: 200ms ease-in-out;
+
+  &--primary {
+    color: $VeryDarkCyan;
+    box-shadow: 0 0 5px rgba($VeryDarkCyan, 0.2);
+    padding: 0.5rem 2.25rem;
+    font-size: 1.3rem;
+    &:hover {
+      color: $GrayishBlue;
+    }
+  }
+
+  &--pink {
+    background-color: $Pink;
+    color: $VeryPaleCyan;
+    padding: 1rem 2.25rem;
+    &:hover {
+      background-color: lighten($Pink, 5%);
+      box-shadow: 0 2px 5px rgba($VeryDarkCyan, 0.2);
+    }
+  }
+}
+
+.content {
+  line-height: 1.5;
+  font-size: 1.8rem;
+
+  &--dark {
+    color: $VeryDarkCyan;
+  }
+  &--light {
+    color: $GrayishBlue;
+    font-size: 1.6rem;
+  }
+}
