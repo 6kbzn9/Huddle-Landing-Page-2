@@ -5,8 +5,38 @@
           box-sizing: border-box;
 }
 
+.flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ai-s {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 html {
   font-size: 62.5%;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 59%;
+  }
 }
 
 body {
@@ -36,6 +66,12 @@ h2 {
 h2 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+}
+
+@media (max-width: 350px) {
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -76,12 +112,12 @@ h2 {
   background-color: #ff52bf;
   color: #ebfbff;
   padding: 1rem 3rem;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 37, 46, 0.2);
+          box-shadow: 0 2px 5px rgba(0, 37, 46, 0.2);
 }
 
 .btn--pink:hover {
   background-color: #ff6bc9;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 37, 46, 0.2);
-          box-shadow: 0 2px 5px rgba(0, 37, 46, 0.2);
 }
 
 .content {
@@ -102,6 +138,16 @@ h2 {
   .content--light {
     font-size: 1.7rem;
   }
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .header {
@@ -264,6 +310,158 @@ h2 {
   .card__body--dif {
     -ms-grid-column: 2;
     grid-column: 2;
+  }
+}
+
+.sub--footer {
+  -webkit-box-shadow: 0 0 5px rgba(0, 37, 46, 0.2);
+          box-shadow: 0 0 5px rgba(0, 37, 46, 0.2);
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #fff;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  max-width: 500px;
+}
+
+.sub--footer__title {
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #00252e;
+  color: #ebfbff;
+  padding: 16rem 0 3rem;
+}
+
+.footer__logo {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__infos {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__infos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.25fr 0.5fr 0.5fr 1fr;
+        grid-template-columns: 1.25fr 0.5fr 0.5fr 1fr;
+    grid-gap: 5rem;
+  }
+}
+
+.footer__contacts {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__contacts {
+    margin-bottom: 0;
+  }
+}
+
+.footer__contact .image {
+  width: 2rem;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: inherit;
+}
+
+.footer__contact .image.location {
+  -webkit-transform: translateY(0.8rem);
+          transform: translateY(0.8rem);
+}
+
+.footer__contact:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__links:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__link:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 0;
+  }
+}
+
+.footer__icon {
+  color: inherit;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.footer__icon:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.footer__icon:hover {
+  color: #ff52bf;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .footer__copy {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=styles.css.map */
